@@ -44,6 +44,9 @@ COPY murdock_slave.sh /usr/bin/murdock_slave
 # create cache folder
 RUN mkdir -m777 /cache
 
+# set cache folder for Download Cache
+ENV DLCACHE_DIR /cache/.dlcache
+
 ENTRYPOINT ["/bin/bash", "/run.sh"]
 
 # By default, run a shell when no command is specified on the docker command line
