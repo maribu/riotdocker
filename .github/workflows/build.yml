@@ -120,16 +120,6 @@ jobs:
           build-args: |
             DOCKER_REGISTRY=${{ env.DOCKER_REGISTRY }}
 
-      - name: Build smallbuild-msp430
-        uses: docker/build-push-action@v2
-        with:
-          context: ./smallbuild-msp430
-          tags: |
-            ${{ env.DOCKER_REGISTRY }}/smallbuild-msp430:latest
-            ${{ env.DOCKER_REGISTRY }}/smallbuild-msp430:${{ env.VERSION_TAG }}
-          build-args: |
-            DOCKER_REGISTRY=${{ env.DOCKER_REGISTRY }}
-
       - name: Build tinybuild-native64
         uses: docker/build-push-action@v2
         with:

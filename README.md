@@ -11,18 +11,19 @@ even more by only supporting C code by dropping the C++ and rust toolchains.
 
 ## Platform Support
 
-| Image                 | Size      | `native32` | `native64` | ARM7 Boards | Cortex M Boards | RISC-V Boards | AVR8 Boards | MSP430 Boards | ESP* Xtensa Boards | ESP* RISC-V Boards |
-| --------------------- | --------- | ---------- | ---------- | ----------- | --------------- | ------------- | ----------- | ------------- | ------------------ | ------------------ |
-| `riotbuild`           | ~ 13.5 GB | ✔          | ✔          | ✔           | ✔               | ✔             | ✔           | ✔             | ✔                  | ✔                  |
-| `smallbuild-arm`      | ~ 4.3 GB  |            |            | ✔           | ✔               |               |             |               |                    |                    |
-| `smallbuild-msp430`   | ~ 0.5 GB  |            |            |             |                 |               |             | ✔             |                    |                    |
-| `smallbuild-native64` | ~ 2.4 GB  |            | ✔          |             |                 |               |             |               |                    |                    |
-| `smallbuild-risc-v`   | ~ 3.3 GB  |            |            |             |                 | ✔             |             |               |                    |                    |
-| `tinybuild-arm`       | ~ 1.2 GB  |            |            | ✔           | ✔               |               |             |               |                    |                    |
-| `tinybuild-avr`       | ~ 0.4 GB  |            |            |             |                 |               | ✔           |               |                    |                    |
-| `tinybuild-msp430`    | ~ 0.4 GB  |            |            |             |                 |               |             | ✔             |                    |                    |
-| `tinybuild-native64`  | ~ 0.3 GB  |            | ✔          |             |                 |               |             |               |                    |                    |
-| `tinybuild-risc-v`    | ~ 1.1 GB  |            |            |             |                 | ✔             |             |               |                    |                    |
+| Image                   | Size      | `native32` | `native64` | ARM7 Boards | Cortex M Boards | RISC-V Boards | AVR8 Boards | MSP430 Boards | ESP* Xtensa Boards | ESP* RISC-V Boards |
+| ----------------------- | --------- | ---------- | ---------- | ----------- | --------------- | ------------- | ----------- | ------------- | ------------------ | ------------------ |
+| `riotbuild`             | ~ 13.5 GB | ✔          | ✔          | ✔           | ✔               | ✔             | ✔           | ✔             | ✔                  | ✔                  |
+| `smallbuild-arm`        | ~ 4.3 GB  |            |            | ✔           | ✔               |               |             |               |                    |                    |
+| `smallbuild-msp430` (*) | ~ 0.5 GB  |            |            |             |                 |               |             | ✔             |                    |                    |
+| `smallbuild-native64`   | ~ 2.4 GB  |            | ✔          |             |                 |               |             |               |                    |                    |
+| `smallbuild-risc-v`     | ~ 3.3 GB  |            |            |             |                 | ✔             |             |               |                    |                    |
+| `tinybuild-arm`         | ~ 1.2 GB  |            |            | ✔           | ✔               |               |             |               |                    |                    |
+| `tinybuild-avr`         | ~ 0.4 GB  |            |            |             |                 |               | ✔           |               |                    |                    |
+| `tinybuild-msp430`      | ~ 0.4 GB  |            |            |             |                 |               |             | ✔             |                    |                    |
+| `tinybuild-native64`    | ~ 0.3 GB  |            | ✔          |             |                 |               |             |               |                    |                    |
+| `tinybuild-risc-v`      | ~ 1.1 GB  |            |            |             |                 | ✔             |             |               |                    |                    |
+- (*) Current g++ does not build for MSP430, so there is no `smallbuild-msp430`
 
 ## Language Support
 
